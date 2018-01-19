@@ -1,0 +1,30 @@
+gameover.html
+<!DOCTYPE html>
+<html>
+<head>
+<title> Game Over </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var gameover_txt = new sjs.Text("Us space gods like sacrifice, so we're letting you do it again.", 44, "white");
+gameover_txt.center().offset(0,-115);
+
+var restartBtn = new sjs.Button("DO IT AGAIN!", function(){
+	window.location = "index.html";
+});
+
+restartBtn.center();
+
+var score_txt = new sjs.Text("Score: 0", 21, "orange");
+score_txt.moveTo(360, 360);
+score_txt.setText("Score: " +localStorage.getItem("score"));
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Project 2 </h1>
+
+<div id="target" style="margin:auto;background: indigo;"></div>
+</body>
+</html>

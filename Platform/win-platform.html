@@ -1,0 +1,30 @@
+win.html
+<!DOCTYPE html>
+<html>
+<head>
+<title> Win </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var win_txt = new sjs.Text("The poor robots! How could you kill them, you psyko?! Eternal shame on thee!!", 37, "red");
+win_txt.center().offset(0,-110);
+
+var menuBtn = new sjs.Button("Main Menu", function(){
+	window.location = "index.html";
+});
+
+menuBtn.center();
+
+var score_txt = new sjs.Text("Score: 0", 21, "orange");
+score_txt.moveTo(360, 360);
+score_txt.setText("Score: " +localStorage.getItem("score"));
+}
+</script>
+</head>
+<body onload="start()">
+<h1> You Win </h1>
+
+<div id="target" style="margin:auto;background:black;"></div>
+</body>
+</html>
