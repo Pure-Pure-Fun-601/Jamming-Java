@@ -1,0 +1,144 @@
+	
+	header {
+		height:20px;
+		width:28%;
+		border:2px solid black;
+		background-color:#FF9933;
+		margin-left: 350px;
+	}
+
+	#rightside {
+		float:right;
+		width:35%;
+	}
+
+	#leftside {
+		width:65%;
+	}
+
+	.navmenu {
+		width:250px;
+		height:30px;
+		margin:auto;
+	}
+
+	#navitem { 
+		list-style-type:none;
+		display:inline;
+		padding-right:1.5em;
+	}
+
+		a:link{ 
+			color:white;
+		} 
+
+		a:visited{ 
+			color:black;
+		} 
+
+		a:hover{ 
+			color:grey;
+		} 
+
+		a:active{ 
+			color:black;
+		}
+
+	.list{
+		color:red;
+		font-size:20;
+	}
+
+
+	h2{
+		padding: 15px;
+	}
+
+	p{
+		color:blue;
+		font-size:20;
+	}
+
+	.yakchops{
+		color:purple;
+		font-size:25;
+	}
+
+	#background{
+background-color:#aef880;
+	}
+
+	#button{
+		width:24px;
+		height:14px;
+		color:white;
+		background-color:black;
+		border-radius:0px;
+	}
+
+	footer {
+		height:20px;
+		width:9%;
+		border:2px solid black;
+		background-color:#aef880;
+		margin-left: 430px;
+	}
+
+	.wrap-text {
+		color: #ff28e0;
+		font-size: 2.1em;
+	}
+
+	.wrap-list {
+		height:120px;
+		width:140px;
+		border:5px dashed green;
+	}
+
+	.wrap-trivia {
+		height:250px;
+		width:400px;
+		border:5px double yellow;
+	}
+
+	.picture {
+		height: 350px;
+		width: 400px;
+	}
+
+
+
+
+
+
+	#one{
+height: 150px;
+width: 150px;
+background-color: red;
+display: inline-block;
+position: absolute;
+ z-index: 2;
+}
+
+#two{
+height: 150px;
+width: 150px;
+background-color: orange;
+display: inline-block;
+position: relative;
+ z-index: 1;
+ top: 750px;
+}
+
+#three{
+height: 150px;
+width: 150px;
+background-color: cyan;
+display: inline-block;
+position: fixed; 
+left: 25%
+}
+
+#HTTYD{
+height: 2048px;
+}

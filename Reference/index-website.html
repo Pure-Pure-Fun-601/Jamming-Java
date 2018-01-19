@@ -1,0 +1,104 @@
+index.html
+<html> 
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css" />
+	<title> This R Website </title> 
+	<script>
+	function banner(){ 
+		var text = confirm("Did You Want to go Have a Poptropical Time?"); 
+		return text; 
+	}
+
+	function answer(){ 
+		var radio = document.getElementsByName("button"); 
+		var selection = false; 
+		var message = "";
+		for( var i = 0; i < radio.length; i++) { 
+			if(radio[i].value == "d" && radio[i].checked == true) { 
+				selection = true; 
+			} //end if statement 
+		} //end for loop
+
+		if(selection == true) {
+		message = message + "<b><p style='color:green'>Dorks Rule!</p></b>"; 
+		} else { 
+		message = message + "<b><p style='color:red'>Know you are pitied, friend.</p></b>"; 
+		}
+		document.getElementById("response").innerHTML = message;
+
+	} //end function answer
+	</script>
+</head> 
+
+<body id="background">
+
+<a href="http://poptropica.com" onclick="return banner()">
+  <header id="header"> Poptropica: Endless Islands of Puzzling Quests. </header>
+</a> 
+
+  <nav>
+  	<ul id="navmenu">
+	  <li class="navitem"><a href="index.html"> Here </a> </li>
+	  <li class="navitem"> <a href="games.html"> Games </a> </li>
+	  <li class="navitem"> <a href="videos.html"> Videos </a> </li>
+	</ul>
+  </nav>
+
+<!---------------------------------------------------------------------------->
+
+<div id="rightside">
+
+<h1> <span class="wrap-text"> Have A </span> day. </h1>
+
+<audio width="400" height="220" controls>
+<source src="ClockScene1.mp3" type="audio/mpeg">
+Your browser does not support HTML 5 audio.
+</audio>
+
+	<div class="wrap-list">
+	  <ol>
+		<li class="list"> read guide </li>
+		<li class="list"> type code </li>
+		<li class="list"> test site </li>
+	  </ol>
+	</div>
+
+<img src="https://s3-us-west-2.amazonaws.com/simplycoding/SpaceMan.png" class="picture"/>
+<img src="https://pbs.twimg.com/profile_images/498283115706847232/SU55Oonq.jpeg" class="picture"/>
+
+</div>
+
+<!---------------------------------------------------------------------------->
+
+<div id="leftside">
+
+	<p class="yakchops">
+		This is where I do stuff and stuff and I put stuff here and stuff and believe in the power of stuff and just lots of stuff everywhere <b>stuff stuff stuff</b> ect. <u>STUFFAGE SHALL RULE SUPREME!!!</u> <i>yay</i>
+	</p>
+
+	<div class="wrap-trivia">
+	<h2> RANDOM FLASH QUIZ! </h2>
+	 <p>What has Toothless Never Done?</p>
+	  <form>
+		<input type="radio" name="button" value="a">Shot Plasma<br>
+		<input type="radio" name="button" value="b">Struggled with Being His own Master<br>
+		<input type="radio" name="button" value="c">Echolocated<br>
+		<input type="radio" name="button" value="d" id="button">Embraced the Awesome Power of SHAZAM<br>
+		<input type="button" value="Click Here" onclick="answer()">
+	  </form>
+	    <div id="response"> </div>
+
+	</div>
+
+<h2> This R Entertainment </h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N_AHCnc-F7Y" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+</div>
+
+<!------------------------------------------------------------------------------>
+
+<center> Elliottech likes these <a href="http://pencilkids.com">Cool Puzzle Games</a> </center>
+
+  <footer> By Elliottech </footer>
+</body> 
+</html>
