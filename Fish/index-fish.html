@@ -1,0 +1,27 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+	sjs.open("target",800,600);
+	var menu_text = new sjs.Text("Help! The Time Sharks are invading an insignificant planet! You must eat  them! Yes, EAT THEM! Sushi! ( And pizza! Don't forget the pizza!)",50,"white");
+	menu_text.centerH();
+	var startBtn = new sjs.Button("Start", function(){
+		window.location = "fish.html";
+	});
+startBtn.center();
+var info_text = new sjs.Text("By Elliottech",20, "black");
+info_text.bottom().centerH();
+
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Fish </h1>
+
+<div id="target" style="margin:auto;background:purple;"></div>
+</body>
+</html>

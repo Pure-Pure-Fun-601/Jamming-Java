@@ -1,0 +1,30 @@
+win.html
+<!DOCTYPE html>
+<html>
+<head>
+<title> Winner! </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+	sjs.open("target",800,500);
+	var background = new sjs.Image("Images/space7.png");
+
+var score_txt = new sjs.Text("Your Score: 0", 21, "white");
+score_txt.bottom();
+score_txt.setText("Your Score: "+localStorage.getItem("score"));
+
+	var menu_text = new sjs.Text("Hooray! The Time Sharks are defeated, and the uninhabited planet will stay that way!",50,"white");
+	menu_text.centerH();
+	var startBtn = new sjs.Button("Play Again?", function(){
+		window.location = "fish.html";
+	});
+startBtn.center();
+}//end start
+</script>
+</head>
+<body onload="start()">
+<h1> Winner! </h1>
+
+<div id="target" style="margin:auto;background:Black;"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+gameover.html
+<!DOCTYPE html>
+<html>
+<head>
+<title> Game Over </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var score_txt = new sjs.Text("Your Score: 0", 21, "orange");
+score_txt.bottom();
+score_txt.setText("Your Score: "+localStorage.getItem("score"));
+var gameover_text = new sjs.Text("Oh no! The Time Sharks gotcha! Try again!",40,"red");
+var restartBtn = new sjs.Button("Restart", function(){
+	window.location = "fish.html"
+});
+restartBtn.center();
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Game Over! </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
