@@ -1,0 +1,35 @@
+win.html
+<html>
+<head>
+<title> Tower Defense Win </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function Winner(){
+sjs.open();
+
+var menu_text = new sjs.Text("You Win!!",46,"yellow");
+menu_text.centerH();
+
+var startBtn = new sjs.Button("Restart", function(){
+window.location = "level1.html";
+});
+startBtn.center();
+
+var parade = new sjs.Image("Images/bad.gif")
+parade.moveTo(10,100)
+parade.setSize(160,160)
+
+var parade = new sjs.Image("Images/gun.png")
+parade.moveTo(320,110)
+parade.setSize(140,140)
+
+var info_text = new sjs.Text("Still brought to you by Elliottech",20,"black");
+info_text.bottom().centerH();
+}
+</script>
+</head>
+<body onload="Winner()">
+<h1> Winner</h1>
+<div id="target" style="overflow:hidden; background-color:orange; margin:auto;"></div>
+</body>
+</html>
